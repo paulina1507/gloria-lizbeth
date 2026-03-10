@@ -165,8 +165,8 @@
         "icono": "4.svg",
         "lado": "left"
       },
-            {
-        "hora": "19:30 hrs",
+      {
+        "hora": "23:00 hrs",
         "texto": "Baile y actividades <br> sorpresa",
         "icono": "1.svg",
         "lado": "left"
@@ -207,13 +207,13 @@
 
     "telefono": "522212576641",
     "mensaje_base": "Hola, confirmo mi asistencia a los XV años de Valeria.",
-    "fecha_limite": "2026-12-10",
+    "fecha_limite": "2026-04-25",
 
     "qr": { "enabled": true },
 
     "titulo": "Confirmar asistencia",
     "texto": "Por favor confirma tu asistencia",
-    "nota": "",
+    "nota": "Te agradeceremos confirmar tu asistencia antes del {{fecha_limite}}.",
 
     "pase": {
       "enabled": true,
@@ -233,7 +233,7 @@
     "final": {
       "titulo": "¡Gracias por confirmar!",
       "texto": "Hemos reservado estos lugares en su honor.",
-      "firma": "XV Años Valeria"
+      "firma": "XV Años Gloria Lizbeth"
     }
   },
   "editorial": {
