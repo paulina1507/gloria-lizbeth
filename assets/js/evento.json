@@ -189,9 +189,12 @@
   "regalos": {
     "enabled": true,
     "titulo": "Sugerencia de Regalos",
-    "descripcion": "Tu presencia es nuestro mejor regalo.<br>Si deseas obsequiar algo, contaremos con algunas opciones disponibles durante la celebración.",
+    "descripcion": "Tu presencia es el mejor regalo.<br>Si deseas obsequiarme algo, habrá una mesa de regalos en la fiesta.",
     "items": [
-      { "icono": "10.svg", "label": "Lluvia de Sobres" },
+      {
+        "icono": "10.svg",
+        "label": "Lluvia de sobres (con sobres disponibles y cofre para depositarlos)"
+      },
       { "icono": "11.svg", "label": "Regalo Sorpresa" }
     ]
   },
