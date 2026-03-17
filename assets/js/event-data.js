@@ -193,8 +193,8 @@ fetch("assets/js/evento.json")
 
       const fechaGeneralEl = document.getElementById("ubicacion-fecha-general");
 
-      if (fechaGeneralEl && data.hero?.fecha_evento) {
-        const fecha = new Date(data.hero.fecha_evento);
+      if (fechaGeneralEl && data.evento?.fecha) {
+        const fecha = new Date(data.evento.fecha);
 
         const dia = fecha.toLocaleDateString("es-MX", {
           weekday: "long",
@@ -206,12 +206,18 @@ fetch("assets/js/evento.json")
           year: "numeric",
         });
 
+        const hora = fecha.toLocaleTimeString("es-MX", {
+          hour: "2-digit",
+          minute: "2-digit",
+        });
+
         fechaGeneralEl.innerHTML = `
-          <div class="fecha-wrapper">
-            <span class="fecha-dia">${dia}</span>
-            <span class="fecha-completa">${fechaBonita}</span>
-          </div>
-        `;
+    <div class="fecha-wrapper">
+      <span class="fecha-dia">${dia}</span>
+      <span class="fecha-completa">${fechaBonita}</span>
+      <span class="fecha-hora">${hora}</span>
+    </div>
+  `;
       }
 
       const lista = document.getElementById("ubicacion-lista");
