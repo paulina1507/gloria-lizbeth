@@ -113,7 +113,7 @@
         "hora": "18:00 HRS",
         "lugar": "Casa de la Cristiandad",
         "direccion": ["Av 33 Ote 1625, Mirador, 72530, Puebla."],
-        "mapa": "https://share.google/WhbxHGokIvS3vaiTA"
+        "mapa": "https://maps.app.goo.gl/WD3a16X15eBys3yq8"
       },
       {
         "enabled": true,
@@ -125,7 +125,7 @@
           "Arboledas de Loma Bella,",
           "72474, Pue"
         ],
-        "mapa": "https://share.google/NywU9yoCFryki74py"
+        "mapa": "https://maps.app.goo.gl/mji4P6PKy9uHNJwa8"
       }
     ]
   },
