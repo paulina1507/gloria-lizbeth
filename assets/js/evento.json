@@ -197,7 +197,7 @@
   },
 
   "galeria": {
-    "enabled": true,
+    "enabled": false,
     "titulo": "Galería"
   },
 
