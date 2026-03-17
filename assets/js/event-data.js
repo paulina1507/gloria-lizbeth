@@ -312,7 +312,7 @@ fetch("assets/js/evento.json")
         cont.insertAdjacentHTML(
           "beforeend",
           `
-          <div class="regalo-item reveal reveal-zoom">
+          <div class="regalo-item reveal">
             <img src="assets/img/${item.icono}" class="regalo-icon">
             <p class="regalo-label">${item.label}</p>
           </div>

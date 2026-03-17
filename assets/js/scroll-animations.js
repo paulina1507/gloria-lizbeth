@@ -30,7 +30,7 @@
 
   function scanReveals(root = document) {
     root
-      .querySelectorAll(".reveal, .reveal-left, .reveal-right, .reveal-zoom")
+      .querySelectorAll(".reveal, .reveal-left, .reveal-right")
       .forEach(observeElement);
   }
 
@@ -47,7 +47,7 @@
           if (node.nodeType !== 1) return;
 
           if (
-            node.matches?.(".reveal, .reveal-left, .reveal-right, .reveal-zoom")
+            node.matches?.(".reveal, .reveal-left, .reveal-right")
           ) {
             observeElement(node);
           }
@@ -84,21 +84,20 @@ document.addEventListener("DOMContentLoaded", () => {
 
       if (
         el.classList.contains("reveal-left") ||
-        el.classList.contains("reveal-right") ||
-        el.classList.contains("reveal-zoom")
+        el.classList.contains("reveal-right")
       ) {
         visibleIndex++;
         return;
       }
 
       if (el.tagName === "H1" || el.tagName === "H2") {
-        el.classList.add("reveal-zoom");
+        el.classList.add("reveal-left");
         visibleIndex++;
         return;
       }
 
       if (el.tagName === "IMG") {
-        el.classList.add("reveal-zoom");
+        el.classList.add("reveal-right");
         visibleIndex++;
         return;
       }
