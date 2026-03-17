@@ -189,8 +189,9 @@
   "regalos": {
     "enabled": true,
     "titulo": "Sugerencia de Regalos",
-    "descripcion": "Tu presencia es el mejor regalo.<br>Si deseas obsequiarme algo, habrá una mesa de regalos en la fiesta.",
+    "descripcion": "Tu presencia es nuestro mejor regalo.<br>Si deseas obsequiar algo, contaremos con algunas opciones disponibles durante la celebración.",
     "items": [
+      { "icono": "10.svg", "label": "Lluvia de Sobres" },
       { "icono": "11.svg", "label": "Regalo Sorpresa" }
     ]
   },
@@ -201,7 +202,7 @@
   },
 
   "rsvp": {
-    "enabled": true,
+    "enabled": false,
     "mode": "panel",
 
     "telefono": "522212576641",
