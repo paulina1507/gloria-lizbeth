@@ -191,7 +191,6 @@
     "titulo": "Sugerencia de Regalos",
     "descripcion": "Tu presencia es el mejor regalo.<br>Si deseas obsequiarme algo, habrá una mesa de regalos en la fiesta.",
     "items": [
-      { "icono": "10.svg", "label": "Lluvia de Sobres" },
       { "icono": "11.svg", "label": "Regalo Sorpresa" }
     ]
   },
@@ -206,10 +205,10 @@
     "mode": "panel",
 
     "telefono": "522212576641",
-    "mensaje_base": "Hola, confirmo mi asistencia a los XV años de Valeria.",
+    "mensaje_base": "Hola, confirmo mi asistencia a los XV años de Gloria Lizbeth.",
     "fecha_limite": "2026-04-25",
 
-    "qr": { "enabled": true },
+    "qr": { "enabled": false },
 
     "titulo": "Confirmar asistencia",
     "texto": "Por favor confirma tu asistencia",
@@ -221,7 +220,7 @@
     },
 
     "mesa": {
-      "enabled": true,
+      "enabled": false,
       "label": "Mesa"
     },
 
