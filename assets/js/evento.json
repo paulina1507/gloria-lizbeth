@@ -22,7 +22,7 @@
     "value": "Mis XV Años"
   },
   "media": {
-    "hero_background": "quinceañera.png",
+    "hero_background": "quinceañera2.png",
     "presentacion": "princesa.svg",
     "vestimenta_icon": "9.svg",
     "galeria": ["gallery1.png", "gallery2.png", "gallery3.png", "gallery4.png"]
@@ -77,7 +77,7 @@
   "hero": {
     "enabled": true,
     "names": {
-      "festejada": "XV Gloria Lizbeth"
+      "festejada": "XV Años Liz"
     },
     "countdown_labels": {
       "dias": "Días",
@@ -91,12 +91,12 @@
     "enabled": true,
     "titulo": "Tengo el honor de invitarte a celebrar mis XV años",
     "nombres": "GLORIA LIZBETH ",
-    "frase": "Con la bendición de Dios y en compañía de mis padres:",
+    "frase": "Gracias, Señor, por guiar mis pasos y llenar mi vida de luz en estos 15 años.",
     "padres": {
-      "festejada": ["JAIME ARTURO ESTRADA BAEZ", "GLORIA IBAÑEZ ROSAS"]
+      "festejada": ["JAIME A. ESTRADA BAEZ", "GLORIA IBAÑEZ ROSAS"]
     },
     "padrinos": ["LETICIA AIDE ESTRADA BAEZ"],
-    "texto_final": "Este día marca una nueva etapa en mi vida y me encantaría compartirlo contigo.",
+    "texto_final": "Se viene un día especial y quiero que estés ahí… ¡mis quince años no serían lo mismo sin ti!",
     "labels": {
       "padres": "Mis Padres",
       "padrinos": "Mi Madrina"

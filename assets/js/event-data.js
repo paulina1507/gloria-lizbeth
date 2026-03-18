@@ -119,7 +119,20 @@ fetch("assets/js/evento.json")
       const heroNamesEl = document.getElementById("hero-names");
 
       if (hero.names?.festejada) {
-        heroNamesEl.textContent = hero.names.festejada;
+        const texto = hero.names.festejada;
+
+        let titulo = "";
+        let nombre = texto;
+
+        if (texto.startsWith("XV Años")) {
+          titulo = "XV Años";
+          nombre = texto.replace("XV Años ", "");
+        }
+
+        heroNamesEl.innerHTML = `
+    <span class="hero-title">${titulo}</span>
+    <span class="hero-name">${nombre}</span>
+  `;
       } else if (hero.names?.novia && hero.names?.novio) {
         heroNamesEl.textContent = `${hero.names.novia} & ${hero.names.novio}`;
       }
@@ -215,7 +228,6 @@ fetch("assets/js/evento.json")
     <div class="fecha-wrapper">
       <span class="fecha-dia">${dia}</span>
       <span class="fecha-completa">${fechaBonita}</span>
-      <span class="fecha-hora">${hora}</span>
     </div>
   `;
       }
