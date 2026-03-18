@@ -301,36 +301,36 @@ body.content-ready .navbar {
 
 .hero-names {
   font-family: "Great Vibes", cursive;
-  font-size: clamp(34px, 16vw, 78px);
+  font-size: clamp(34px, 7vw, 78px);
 
   background: linear-gradient(
     120deg,
-    #a7a4a4 0%,
-    #f9fafb 12%,
-    #e7ecf2 28%,
-    #c9d1d9 42%,
-    #ffffff 50%,
-    #d8dee5 60%,
-    #f3f6f9 78%,
-    #ffffff 100%
+    #7a8086 0%,
+    #a6adb4 20%,
+    #d6dbe0 35%,
+    #eef1f4 45%,
+    /* luz más suave */ #b8bfc6 60%,
+    #9aa1a8 80%,
+    #7a8086 100%
   );
 
-  background-size: 220% 220%;
+  background-size: 200% 200%;
 
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 
-  /* ✨ más delicado */
-  -webkit-text-stroke: 0.8px rgba(120, 125, 130, 0.35);
+  -webkit-text-stroke: 0.7px rgba(95, 100, 105, 0.5);
 
   text-shadow:
-    0 1px 0 rgba(255, 255, 255, 0.95),
-    0 2px 4px rgba(0, 0, 0, 0.12),
-    0 0 6px rgba(200, 205, 210, 0.18);
+    0 1px 0 rgba(255, 255, 255, 0.7),
+    0 2px 4px rgba(0, 0, 0, 0.2);
 
   letter-spacing: 1px;
-  line-height: 1.05;
+}
+
+.hero-names {
   position: relative;
+  overflow: hidden;
 }
 
 .hero-names::after {
@@ -339,15 +339,17 @@ body.content-ready .navbar {
   inset: 0;
 
   background: linear-gradient(
-    75deg,
-    transparent 35%,
-    rgba(255, 255, 255, 0.6) 50%,
-    transparent 65%
+    120deg,
+    transparent 0%,
+    rgba(255, 255, 255, 0.4) 40%,
+    rgba(255, 255, 255, 0.7) 50%,
+    rgba(255, 255, 255, 0.4) 60%,
+    transparent 100%
   );
 
-  opacity: 0.45;
-  mix-blend-mode: screen;
-  animation: shineSweep 4s ease-in-out infinite;
+  transform: translateX(-120%);
+  animation: shineSweep 6s ease-in-out infinite;
+
   pointer-events: none;
 }
 
@@ -409,28 +411,27 @@ body.content-ready .navbar {
 .hero-count div span {
   font-size: clamp(28px, 18vw, 40px);
   font-weight: 600;
-
   background: linear-gradient(
     120deg,
-    #a3a2a2 0%,
-    #87888a 30%,
-    #a2a4a7 45%,
-    #8a8484 55%,
-    #a4a4a5 70%,
-    #aeb0b3 100%
+    #7a8086 0%,
+    #a6adb4 20%,
+    #d6dbe0 35%,
+    #eef1f4 45%,
+    /* luz más suave */ #b8bfc6 60%,
+    #9aa1a8 80%,
+    #7a8086 100%
   );
 
   background-size: 200% 200%;
+
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 
-  /* ✨ más fino que el título */
-  -webkit-text-stroke: 0.25px rgba(197, 201, 206, 0.25);
+  -webkit-text-stroke: 0.7px rgba(95, 100, 105, 0.5);
 
   text-shadow:
-    0 1px 0 rgba(255, 255, 255, 0.9),
-    0 2px 3px rgba(0, 0, 0, 0.12);
-
+    0 1px 0 rgba(255, 255, 255, 0.7),
+    0 2px 4px rgba(0, 0, 0, 0.2);
   letter-spacing: 0.5px;
 }
 
@@ -659,66 +660,48 @@ body.content-ready .navbar {
 }
 
 @media (max-width: 768px) {
-
-  /* TÍTULO */
+  /* TÍTULO → más suave */
   .hero-names {
     font-size: clamp(36px, 40vw, 60px);
-    -webkit-text-stroke: 0.3px rgba(120, 120, 120, 0.3);
+
+    -webkit-text-stroke: 0.7px rgba(95, 100, 105, 0.6);
 
     text-shadow:
-      0 1px 0 rgba(255,255,255,0.9),
-      0 2px 3px rgba(0,0,0,0.15),
-      0 0 4px rgba(200,200,200,0.15);
+      0 1px 0 rgba(255, 255, 255, 0.75),
+      0 2px 4px rgba(0, 0, 0, 0.25);
   }
 
-  /* SHINE menos intenso en móvil */
-  .hero-names::after {
-    opacity: 0.8;
-  }
-
-  /* WRAPPER */
-  .hero-count-wrapper {
-    margin-top: 8px;
-    padding: 8px 14px;
-    gap: 6px;
-  }
-
-  /* LABEL */
-  .hero-count-label {
-    font-size: 14px;
-    letter-spacing: 3px;
-  }
-
-  /* COUNT */
+  /* COUNT → layout igual */
   .hero-count {
-    margin-top: 10px;
     gap: 10px;
     padding: 0 8px;
   }
 
-  /* NÚMEROS (AQUÍ ESTABA TU MAYOR PROBLEMA) */
+  /* NÚMEROS → tenue pero visibles */
   .hero-count div span {
-    font-size: clamp(26px, 10vw, 34px); /* 👈 antes 18vw estaba exagerado */
+    font-size: clamp(26px, 10vw, 34px);
 
-    -webkit-text-stroke: 0.2px rgba(120, 120, 120, 0.2);
+    -webkit-text-stroke: 0.9px rgba(85, 90, 95, 0.7);
 
     text-shadow:
-      0 1px 0 rgba(255,255,255,0.9),
-      0 1px 2px rgba(0,0,0,0.12);
+      0 1px 0 rgba(255, 255, 255, 0.75),
+      0 2px 4px rgba(0, 0, 0, 0.3);
   }
 
-  /* TEXTOS */
+  /* TEXTOS secundarios */
   .hero-count small {
-    font-size: 11px;
     opacity: 0.85;
   }
 
-  /* SEPARADORES */
-  .sep {
-    font-size: 16px;
-    opacity: 0.5;
+  .hero-names::after {
+    opacity: 0.6;
+    animation-duration: 10s; /* más lento */
   }
-
+  /* SEPARADORES → más sutiles */
+  .sep {
+    opacity: 0.6;
+    color: #d5dbe1;
+  }
 }
 
 /* ========================================================= */
