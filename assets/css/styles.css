@@ -305,13 +305,13 @@ body.content-ready .navbar {
 
   background: linear-gradient(
     120deg,
-    #7a8086 0%,
-    #a6adb4 20%,
-    #d6dbe0 35%,
-    #eef1f4 45%,
-    /* luz más suave */ #b8bfc6 60%,
-    #9aa1a8 80%,
-    #7a8086 100%
+    #6f767d 0%,
+    #cfd6dd 20%,
+    #ffffff 35%,
+    /* 🔥 brillo fuerte */ #dfe5ea 45%,
+    #9aa1a8 60%,
+    #ffffff 75%,
+    /* 🔥 otro brillo */ #6f767d 100%
   );
 
   background-size: 200% 200%;
@@ -322,8 +322,8 @@ body.content-ready .navbar {
   -webkit-text-stroke: 0.7px rgba(95, 100, 105, 0.5);
 
   text-shadow:
-    0 1px 0 rgba(255, 255, 255, 0.7),
-    0 2px 4px rgba(0, 0, 0, 0.2);
+    0 0 6px rgba(255, 255, 255, 0.6),
+    0 2px 6px rgba(0, 0, 0, 0.25);
 
   letter-spacing: 1px;
 }
@@ -413,13 +413,13 @@ body.content-ready .navbar {
   font-weight: 600;
   background: linear-gradient(
     120deg,
-    #7a8086 0%,
-    #a6adb4 20%,
-    #d6dbe0 35%,
-    #eef1f4 45%,
-    /* luz más suave */ #b8bfc6 60%,
-    #9aa1a8 80%,
-    #7a8086 100%
+    #6f767d 0%,
+    #cfd6dd 20%,
+    #ffffff 35%,
+    /* 🔥 brillo fuerte */ #dfe5ea 45%,
+    #9aa1a8 60%,
+    #ffffff 75%,
+    /* 🔥 otro brillo */ #6f767d 100%
   );
 
   background-size: 200% 200%;
@@ -430,8 +430,8 @@ body.content-ready .navbar {
   -webkit-text-stroke: 0.7px rgba(95, 100, 105, 0.5);
 
   text-shadow:
-    0 1px 0 rgba(255, 255, 255, 0.7),
-    0 2px 4px rgba(0, 0, 0, 0.2);
+    0 0 6px rgba(255, 255, 255, 0.6),
+    0 2px 6px rgba(0, 0, 0, 0.25);
   letter-spacing: 0.5px;
 }
 
